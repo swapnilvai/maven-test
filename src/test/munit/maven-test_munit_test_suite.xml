@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
     </spring:beans>
     <munit:test name="maven-test_munit_test_suite-mule-testFlowTest" description="Test">
         <flow-ref name="mule-testFlow" doc:name="Flow-ref to mule-testFlow"/>
-        <munit:assert-on-equals expectedValue="#['Hello Swapnil']" actualValue="#[payload]" doc:name="Assert Equals"/>
+        <munit:assert-on-equals expectedValue="#['Hello Test Maven']" actualValue="#[payload]" doc:name="Assert Equals"/>
     </munit:test>
 </mule>
